@@ -1,0 +1,186 @@
+body{
+    margin:0px auto;
+    width: 100%;
+    font-family: 'Patua One', cursive;
+}
+nav ul li {
+    list-style-type:none;
+    float: left;
+    padding-right: 2.5em;/* (px,em,%),pt,cm */
+    color:#e79e4f;
+}
+nav ul{
+    float: right;   
+}
+nav{
+    width: 100%;
+    height: 50px;
+    background-color:#734046;
+    position: fixed;
+}
+nav ul li a{
+  text-decoration: none;
+  color:#e79e4f;
+}
+section{
+    background-color: #a05344;
+}
+.home{
+    background-color:#a05344;
+    text-align: center;
+    font-size:48px;
+    color:#e79e4f;
+    display: table;
+    height: 100vh;
+    width: 100%;
+}
+.home .inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+.home .inner h1{
+  font-family: 'Satisfy', cursive;
+}
+.home .inner img{
+    border-radius: 100%;
+    width:250px;
+    height: auto;
+}
+.about{
+    background-image: url('https://cdn.pixabay.com/photo/2017/03/25/17/55/color-2174045_1280.png');
+    display: table;
+    height: 100vh;
+    width:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about .inner{
+    display: table-cell;
+    vertical-align: middle;
+    width: 70%;
+    float: left;
+    padding-top: 75px;
+    padding-left: 50px;
+}
+.about .inner h1{
+    font-size: 42px;
+    font-weight: 300;
+}
+.about .inner p{
+    font-size: 28px;
+    line-height: 60px;
+}
+.edu{
+  background-color: #f3eac2;
+  display: table;
+  height: 100vh;
+  width:100%;
+}
+.edu .inner{
+  padding: 50px;
+}
+.edu h1, .hobby h1, .skill h1, .contact h1{
+  font-size: 42px;
+}
+.edu .inner div, .hobby .inner div, .skill .inner div{
+  width: 30%;
+  margin-left: 5px;
+  margin-right: 5px;
+  float: left;
+  text-align: center;
+}
+.edu .inner div img, .hobby .inner div img{
+  width: 100px;
+  height: auto;
+}
+.edu .inner div p, .hobby .inner div p , .skill .inner div ul li, .contact .inner div p{
+  font-size: 32px;
+}
+.hobby, .contact{
+  display: table;
+  height: 100vh;
+  width:100%;
+}
+.hobby .inner , .contact .inner{
+  padding: 50px;
+}
+.skill{
+  background-color: #f6d6ad;
+  display: table;
+  height: 100vh;
+  width:100%; 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.skill .inner{
+  background-color: rgba(0,0,0,0.7);
+  color:black;
+}
+.skill .inner div ul li{
+  list-style-type: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.contact .inner{
+  text-align: center;
+  color:white;
+}
+/* responsive design */
+@media (min-width:320px) and (max-width: 767px) {
+  body{
+    text-align: center;
+    
+  }
+  nav {
+    height: 100px;
+  }
+  .home .inner img {
+    padding-top: 100px;
+  }
+  #about {
+    background: beige !important;
+  }
+  .about .inner{
+    width: 95%;
+    padding: 25px;
+  }
+  .about .inner p {
+    font-size: 18px;
+    text-align: justify;
+  }
+  .edu .inner div, .hobby .inner div, .skill .inner div {
+    width: 100%;
+    border-bottom: 2px solid black;
+    font-size: 24px;
+  }
+  .hobby .inner div {
+    border-bottom: 2px solid #f4ebc1;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  nav {
+    height: 50px;
+  }
+  .home .inner img {
+    padding-top: 100px;
+  }
+  #about {
+    background: beige !important;
+  }
+  .about .inner{
+    width: 95%;
+    padding: 20px;
+  }
+  .about .inner p {
+    font-size: 24px;
+    text-align: justify;
+  }
+  .edu .inner div, .hobby .inner div, .skill .inner div {
+    width: 100%;
+    border-bottom: 2px solid black;
+    font-size: 24px;
+  }
+  .hobby .inner div {
+    border-bottom: 2px solid #f4ebc1;
+  }
+}

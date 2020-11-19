@@ -1,0 +1,54 @@
+body{
+  margin: 0px;
+}
+.button button{
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    border-color:transparent;
+}
+.button button a{
+  text-decoration: none;
+  color: blanchedalmond;
+}
+.grad{
+  min-height: 500px;
+  background-image: linear-gradient(#f1d4d4,#e6739f,#cc0e74,#790c5a);
+}
+.trans:hover{
+  background: pink;
+}
+.bg{
+  background-image: url('https://cdn.pixabay.com/photo/2017/07/03/20/17/abstract-2468874__340.jpg');
+  background-size: auto;
+}
+/*responsive media*/
+@media (min-width: 1441px) and (max-width: 2560px ){
+  .button .xl{
+    padding: 25px 45px;
+    font-size: 48px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1440px ){
+  .button .lg{
+    padding: 20px 4px;
+    font-size: 36px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px ){
+.button .md{
+  padding: 15px 30px;
+  font-size: 28px;
+ }
+}
+@media (min-width: 425px) and (max-width: 767px ){
+  .button .sm{
+    padding: 12px 25px;
+    font-size: 24px;
+  }
+}
+@media (min-width: 320px) and (max-width: 424px ){
+  .button .xs{
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+}
